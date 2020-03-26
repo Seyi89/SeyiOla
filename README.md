@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My First WebPage</title>
   <meta charset="UTF-8">
 </head>
 <body>
