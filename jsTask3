@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>This is my Javascript Task 3</h1>
+
+<script>
+    
+    function codingChallenge(param) {
+        let output = [];   
+        for (let i=1; i<=param; i++) {
+            if ((i % 2===0) && (i % 3 ===0) && (i % 5 ===0)) {
+            output.push("yu"+"-"+"gi"+"-"+"oh");
+        }     
+        else if ((i % 2===0) && (i % 3 ===0)) {
+            output.push("yu"+"-"+"gi");
+        }
+        else if((i % 3===0) && (i % 5 ===0)) {
+            output.push("gi"+"-"+"oh");
+        }
+        else if((i % 2===0) && (i % 5 ===0)) {
+            output.push("yu"+"-"+"oh");
+        }
+        else if(i % 2 === 0){
+                output.push("yu");
+            }
+        else if (i % 3 === 0){
+                output.push("gi");
+            }
+        else if (i % 5 === 0){
+                output.push("oh");
+            }
+        else output.push(i);
+        }
+        console.log(output);
+    }
+
+    codingChallenge(100);
+    codingChallenge(900);
+</script>
+    
+</body>
+</html>
